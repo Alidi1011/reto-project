@@ -21,4 +21,9 @@ public class UserController {
     public List<GorestUserDto> getUsers(){
         return accountService.getUsers();
     }
+
+    @GetMapping("/{id}")
+    public GorestUserDto getUsers(@PathVariable Long id){
+        return accountService.getUserById(id);
+    }
 }

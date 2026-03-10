@@ -10,6 +10,6 @@ public interface AccountService {
 
     public List<Account> findByType(String type) throws Exception;
     public List<GorestUserDto> getUsers();
-
+    public GorestUserDto getUserById(Long id);
 
 }
